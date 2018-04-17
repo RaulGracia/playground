@@ -34,7 +34,31 @@ public class MyCalculatorTest {
     @Test
     public void multiplyTest() {
         int a = 2, b = 2;
-        assert calculator.multilply(a, b)==(a*b);
+        assert calculator.multiply(a, b)==(a*b);
+    }
+
+    @Test
+    public void sumTestDouble() {
+        double a = 2, b = 2;
+        assert calculator.sum(a, b)==(a+b);
+    }
+
+    @Test
+    public void subtractTestDouble() {
+        double a = 2, b = 2;
+        assert calculator.subtract(a, b)==(a-b);
+    }
+
+    @Test
+    public void divideTestDouble() {
+        double a = 2, b = 3;
+        assert calculator.divide(a, b)==(((double)a)/b);
+    }
+
+    @Test
+    public void multiplyTestDouble() {
+        double a = 2, b = 2;
+        assert calculator.multiply(a, b)==(a*b);
     }
 
 }
